@@ -41,7 +41,7 @@ class AppEngineFlexFormatter extends LineFormatter
      * @param array $record A record to format
      * @return mixed The formatted record
      */
-    public function format(array $record)
+    public function format(array $record): string
     {
         $message = parent::format($record);
         list($usec, $sec) = explode(" ", microtime());

@@ -61,7 +61,7 @@ class AppEngineFlexHandler extends StreamHandler
      *
      * @return FormatterInterface
      */
-    protected function getDefaultFormatter()
+    protected function getDefaultFormatter(): FormatterInterface
     {
         return new AppEngineFlexFormatter();
     }

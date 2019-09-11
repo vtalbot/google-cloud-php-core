@@ -4,7 +4,7 @@
     "license": "Apache-2.0",
     "minimum-stability": "stable",
     "require": {
-        "php": ">=5.5",
+        "php": ">=7.1",
         "rize/uri-template": "~0.3",
         "google/auth": "^1.5.1",
         "guzzlehttp/guzzle": "^5.3|^6.0",

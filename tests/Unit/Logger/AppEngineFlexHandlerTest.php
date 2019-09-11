@@ -47,7 +47,7 @@ class AppEngineFlexHandlerTest extends TestCase
     public function testOneLine()
     {
         $msg = 'Error message';
-        $this->log->addError($msg);
+        $this->log->error($msg);
         rewind($this->stream);
         $log_text = stream_get_contents($this->stream);
         $log_array = json_decode($log_text, true);

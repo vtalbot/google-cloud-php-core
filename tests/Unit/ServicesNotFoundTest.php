@@ -104,7 +104,7 @@ class ServicesNotFoundTest extends TestCase
      */
     public function testServicesNotFound($method)
     {
-        $this->setExpectedException(\Exception::class, sprintf(
+        $this->expectExceptionMessage(sprintf(
             'The google/cloud-%s package is missing and must be installed.',
             strtolower($method)
         ));
